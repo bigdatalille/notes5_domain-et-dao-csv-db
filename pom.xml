@@ -1,0 +1,101 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.thi</groupId>
+	<artifactId>notes</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>Notes</name>
+	<description>Programme d'exemple.</description>
+	<url>http://www.thierryler.com</url>
+
+	<licenses>
+		<license>
+			<name>Copyright ©1995-2011 thierryler.com et Copyright ©2011 Developpez.com</name>
+			<comments>Les sources présentés sur cette page sont libres de droits, et vous pouvez les utiliser à votre convenance. Par contre cette page de présentation de ces sources constitue une oeuvre intellectuelle protégée par les droits d'auteurs. Copyright ©2011 Thierry Leriche-Dessirier. Aucune reproduction, même partielle, ne peut être faite de ce site et de l'ensemble de son contenu : textes, documents, images, etc sans l'autorisation expresse de l'auteur. Sinon vous encourez selon la loi jusqu'à 3 ans de prison et jusqu'à 300 000 E de dommages et intérêts. Cette page est déposée à la SACD.</comments>
+		</license>
+	</licenses>
+
+	<developers>
+		<!-- Thierry -->
+		<developer>
+			<name>Thierry Leriche-Dessirier</name>
+			<roles>
+				<role>Developper</role>
+			</roles>
+			<organization>ICAUDA</organization>
+		</developer>
+
+	</developers>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<junit.version>4.8.2</junit.version>
+		<jfreechart.version>1.0.14</jfreechart.version>
+		<opencsv.version>2.3</opencsv.version>
+		<mysql-connector-java.version>5.1.18</mysql-connector-java.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<!-- Junit -->
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>${junit.version}</version>
+				<scope>test</scope>
+			</dependency>
+
+			<!-- jfreechart -->
+			<dependency>
+				<groupId>org.jfree</groupId>
+				<artifactId>jfreechart</artifactId>
+				<version>${jfreechart.version}</version>
+			</dependency>
+
+			<!-- Open CSV -->
+			<dependency>
+				<groupId>net.sf.opencsv</groupId>
+				<artifactId>opencsv</artifactId>
+				<version>${opencsv.version}</version>
+			</dependency>
+
+			<!-- MySql -->
+			<dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>${mysql-connector-java.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<dependencies>
+		<!-- Junit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- jfreechart -->
+		<dependency>
+			<groupId>org.jfree</groupId>
+			<artifactId>jfreechart</artifactId>
+		</dependency>
+
+		<!-- Open CSV -->
+		<dependency>
+			<groupId>net.sf.opencsv</groupId>
+			<artifactId>opencsv</artifactId>
+		</dependency>
+
+		<!-- MySql -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+	</dependencies>
+
+</project>
